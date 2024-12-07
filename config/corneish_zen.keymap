@@ -37,9 +37,9 @@
 
         raise_layer {
             bindings = <
-                &kp TAB   &kp SLASH &kp QUESTION &kp UP    &kp PLUS   &kp none     &kp none   &kp MINUS &kp HOME  &kp PGUP &kp none  &kp DELETE
-                &kp TRANS &kp NONE  &kp LEFT     &kp DOWN  &kp RIGHT  &kp NONE     &kp NONE   &kp END   &kp PGDN &kp PIPE  &kp TRANS &kp NONE
-                &kp TRANS &kp BSLASH &kp UNDER   &kp COPY  &kp PASTE  &kp NONE     &kp PLAY   &kp PREV  &kp NEXT  &kp VOLD  &kp VOLU  &kp TRANS
+                &kp TAB    &kp SLASH   &kp QUESTION &kp UP    &kp PLUS   &trans       &trans     &kp MINUS &kp HOME  &kp PGUP &trans    &kp DELETE
+                &trans     &trans      &kp LEFT     &kp DOWN  &kp RIGHT  &trans       &trans     &kp END   &kp PGDN  &kp PIPE  &trans   &trans
+                &trans     &kp BSLASH  &kp UNDER    &kp COPY  &kp PASTE  &trans       &kp PLAY   &kp PREV  &kp NEXT  &kp VOLD  &kp VOLU &trans
                                                     &kp CTL_ESC &kp TRANS &mo 2    &kp TRANS &kp TRANS &kp TRANS
 
             >;
@@ -47,10 +47,11 @@
 
         function_layer {
             bindings = <
-                &kp NONE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp NONE
-                &kp NONE &kp F11 &kp F12 &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE
-                &kp NONE &kp CAPS &kp NONE &kp NONE &kp NONE &kp NONE &kp BT1 &kp BT2 &kp BT3 &kp NONE &NONE
-                &kp CAPS &kp NONE &kp NONE &kp NONE &kp NONE &kp NONE
+                &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &trans
+                &trans &kp F11 &kp F12 &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &kp CAPS &trans &trans &trans &trans &kp BT1 &kp BT2 &kp BT3 &trans &NONE
+                &kp CAPS &trans &trans &trans &trans &trans
+
 
             >;
         };
