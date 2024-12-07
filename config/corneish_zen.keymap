@@ -37,7 +37,7 @@
 
         raise_layer {
             bindings = <
-                &kp TAB   &kp SLASH &kp QUESTION &kp UP    &kp PLUS   &kp NONE     &kp NONE   &kp MINUS &kp HOME  &kp PGUP &kp KP_EQUAL  &kp DEL
+                &kp TAB   &kp SLASH &kp QUESTION &kp UP    &kp PLUS   &kp NONE     &kp NONE   &kp MINUS &kp HOME  &kp PGUP &kp EQUAL  &kp DEL
                 &kp TRANS &kp NONE  &kp LEFT     &kp DOWN  &kp RIGHT  &kp NONE     &kp NONE   &kp END   &kp PGDN &kp PIPE  &kp TRANS &kp NONE
                 &kp TRANS &kp BSLASH &kp UNDER   &kp COPY  &kp PASTE  &kp NONE     &kp PLAY   &kp PREV  &kp NEXT  &kp VOLD  &kp VOLU  &kp TRANS
                                                     &kp CTL_ESC &kp TRANS &mo 2    &kp TRANS &kp TRANS &kp TRANS
