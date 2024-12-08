@@ -39,7 +39,7 @@
             bindings = <
                 &kp TAB    &kp SLASH   &kp QUESTION &kp UP    &kp PLUS   &trans       &trans     &kp MINUS &kp HOME  &kp PGUP &kp EQUAL    &kp DELETE
                 &trans     &trans      &kp LEFT     &kp DOWN  &kp RIGHT  &trans       &trans     &kp END   &kp PGDN  &kp PIPE  &trans   &trans
-                &trans     &kp SLASH  &kp UNDER    &kp COPY  &kp PASTE  &trans       &kp PLAY   &kp PREV  &kp NEXT  &kp VOLD  &kp VOLU &trans
+                &trans     &kp SLASH   &trans       &kp COPY  &kp PASTE  &trans       &kp PLAY   &kp PREV  &kp NEXT  &kp VOLD  &kp VOLU &trans
                                                     &kp CTL_ESC &kp TRANS &mo 2    &kp TRANS &kp TRANS &kp TRANS
 
             >;
