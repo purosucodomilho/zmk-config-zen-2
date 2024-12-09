@@ -28,7 +28,7 @@
 
         lower_layer {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR        &kp PERCENT       &kp CARET        &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+& ESC   &kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR        &kp PERCENT       &kp CARET        &kp AMPERSAND      &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
 &trans  &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4      &kp NUMBER_5      &kp NUMBER_6     &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &trans
 &trans  &trans           &kp TILDE     &kp GRAVE     &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans        &trans                &kp LEFT_WIN           &trans
                                        &trans        &trans            &trans            &kp BACKSPACE    &trans             &kp COLON
@@ -37,10 +37,10 @@
 
         raise_layer {
             bindings = <
-                &kp TAB    &kp SLASH   &kp QUESTION   &kp UP    &kp PLUS   &trans       &trans     &kp MINUS &kp HOME  &kp PGUP &kp EQUAL    &kp DELETE
-                &trans     &trans      &kp LEFT       &kp DOWN  &kp RIGHT  &trans       &trans     &kp END   &kp PGDN  &kp PIPE  &trans   &trans
-                &trans     &kp BSLH    &kp UNDERSCORE &kp K_COPY  &kp K_PASTE  &trans       &kp C_PLAY_PAUSE   &kp C_PREVIOUS    &kp C_NEXT        &kp C_VOLUME_DOWN    &kp C_VOLUME_UP &trans
-                                                    &kp ESC  &trans &trans    &trans &trans &trans
+                &kp TAB    &kp SLASH   &kp QUESTION   &kp UP    &kp PLUS   &trans       &trans     &kp MINUS &kp HOME  &kp PGUP  &kp EQUAL   &kp DELETE
+                &trans     &trans      &kp LEFT       &kp DOWN  &kp RIGHT  &trans       &trans     &trans    &kp END   &kp PGDN  &kp PIPE    &trans      
+                &trans     &kp BSLH    &kp UNDERSCORE &kp K_COPY  &kp K_PASTE  &trans       &kp C_PLAY_PAUSE   &kp C_PREVIOUS    &kp C_NEXT  &kp C_VOLUME_DOWN    &kp C_VOLUME_UP &trans
+                                                    &trans  &trans &trans    &trans &trans &trans
 
             >;
         };
