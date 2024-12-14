@@ -18,10 +18,10 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>;
-            bindings = <&kp, &sk>;
+            bindings = <&kp>, <&sk>;
         };
     };
-};
+};      
 
 / {
     combos { compatible = "zmk,combos"; };
