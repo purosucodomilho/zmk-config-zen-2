@@ -15,6 +15,7 @@
     behaviors {
         rars:ralt_rshift {
             compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <250>;
             bindings = <&sk>, <&kp>;
