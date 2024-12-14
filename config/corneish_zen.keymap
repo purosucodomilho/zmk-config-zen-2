@@ -12,12 +12,12 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
-    behaviors {
+    macros {
         ralt_rshift: ralt_rshift {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             tapping-term-ms = <250>;
-            bindings = <&sk RIGHT_ALT &kp RIGHT_SHIFT>;
+            bindings = <&sk RALT>, <&kp RSHIFT>;
         };
     };
 };
