@@ -13,7 +13,7 @@
 
 / {
     behaviors {
-        ralt_rshift: rars {
+        rars:ralt_rshift {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
             tapping-term-ms = <250>;
