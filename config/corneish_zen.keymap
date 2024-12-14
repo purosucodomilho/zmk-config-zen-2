@@ -12,6 +12,19 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    behaviors {
+        ralt_rshift = &hold_tap {
+            flavor = "balanced";
+            // Tapping Term de 250ms: tempo máximo de "toque rápido"
+            tapping-term-ms = <250>;
+            // Quando toque rápido: sticky RIGHT_ALT
+            // Quando mantido pressionado: RIGHT_SHIFT
+            bindings = <&sk RIGHT_ALT>, <&kp RIGHT_SHIFT>;
+        };
+    };
+};
+
+/ {
     combos { compatible = "zmk,combos"; };
 
     keymap {
@@ -22,7 +35,7 @@
                 &kp TAB     &kp Q   &kp W   &kp E   &kp R   &kp T          &kp Y   &kp U   &kp I      &kp O   &kp P      &kp LBKT
                 &kp LALT    &kp A   &kp S   &kp D   &kp F   &kp G          &kp H   &kp J   &kp K      &kp L   &kp SEMI   &kp SINGLE_QUOTE
                 &sk LSHIFT  &kp Z   &kp X   &kp C   &kp V   &kp B          &kp N   &kp M   &kp COMMA  &kp DOT &kp SLASH  &sl 3
-                         &kp LCTRL  &mt LEFT_GUI ENTER  &lt 1 TAB    &lt 2 BACKSPACE  &mt RIGHT_ALT SPACE  &kp RIGHT_SHIFT 
+                         &kp LCTRL  &mt LEFT_GUI ENTER  &lt 1 TAB    &lt 2 BACKSPACE  &kp SPACE  &ralt_rshift 
             >;
         };
 
