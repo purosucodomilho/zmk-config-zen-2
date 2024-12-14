@@ -19,7 +19,7 @@
             tapping-term-ms = <250>;
               // Quando toque rápido: sticky (grude) RIGHT_ALT
               // Quando mantido pressionado: RIGHT_SHIFT
-            bindings = <&sk RIGHT_ALT> <&kp RIGHT_SHIFT>;
+            bindings = <&sk RIGHT_ALT &kp RIGHT_SHIFT>;
         };
     };
 };
