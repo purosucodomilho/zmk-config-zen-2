@@ -13,12 +13,10 @@
 
 / {
     behaviors {
-        ralt_rshift = &hold_tap {
+        ralt_rshift: ralt_rshift {
+            compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-              // Tapping Term de 250ms
             tapping-term-ms = <250>;
-              // Quando toque rápido: sticky (grude) RIGHT_ALT
-              // Quando mantido pressionado: RIGHT_SHIFT
             bindings = <&sk RIGHT_ALT &kp RIGHT_SHIFT>;
         };
     };
