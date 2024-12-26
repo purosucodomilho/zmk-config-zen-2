@@ -52,7 +52,8 @@
         &macro_press   &kp LSHFT &kp LCTRL
         &macro_tap     0
         &macro_release &kp LSHFT &kp LCTRL
-                    };
+               >;
+               };
             };
 };
 
