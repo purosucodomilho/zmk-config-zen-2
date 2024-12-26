@@ -75,7 +75,7 @@
 &trans  &mkp LCLK        &mkp RCLK     &kp      &kp LEFT_BRACKET  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &trans        &kp GRAVE              &mcr_asp           &trans
                                        &trans        &trans            &trans            &kp BACKSPACE    &trans             &kp COLON
             >;
-        };_
+        };
 
         raise_layer {
             bindings = <
