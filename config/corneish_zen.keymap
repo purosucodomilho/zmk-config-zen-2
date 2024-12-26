@@ -18,7 +18,7 @@
       compatible = "zmk,behavior-sticky-key";
       label = "STICKY_KEY_QUICK_RELEASE";
       #binding-cells = <1>;
-      bindings = <&kp>;
+      bindings = 0;
       release-after-ms = <1000>;
       quick-release;
     };
