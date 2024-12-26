@@ -24,7 +24,7 @@
     bindings = <BINDINGS>; \
   };
 
-MACRO(asp, &macro_press &kp LALT &macro_tap &kp N3 &kp N4 &macro_release &kp LALT)
+MACRO(asp, &macro_press &kp LALT &macro_tap &kp N3 &kp N4 &macro_release &kp LALT);
 
 / {
   behaviors {
