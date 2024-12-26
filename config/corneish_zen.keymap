@@ -12,22 +12,6 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define STRINGIFY(x) #x
-#define EXPAND_AND_STRINGIFY(x) STRINGIFY(x)
-#define MACRO(NAME, BINDINGS) \
-  mcr_##NAME: mcr_##NAME { \
-    label = EXPAND_AND_STRINGIFY(mcr_##NAME); \
-    compatible = "zmk,behavior-macro"; \
-    #binding-cells = <0>; \
-    wait-ms = <20>; \
-    tap-ms = <10>; \
-    bindings = <BINDINGS>; \
-  };
-
-/ {
-    macros {
-MACRO(asp, &macro_tap &kp LALT)
-};
 
 / {
   behaviors {
@@ -54,6 +38,19 @@ MACRO(asp, &macro_tap &kp LALT)
     };
 };
 
+
+/ {
+    macros {
+        mcr_asp: mcr_asp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_N2 &kp KP_N4 &kp KP_N8>,
+                <&macro_release &kp LALT>;
+        };
+    };
+};
 
 
 / {
