@@ -24,7 +24,10 @@
     bindings = <BINDINGS>; \
   };
 
-MACRO(asp, &macro_tap &kp LALT);
+/ {
+    macros {
+MACRO(asp, &macro_tap &kp LALT)
+};
 
 / {
   behaviors {
