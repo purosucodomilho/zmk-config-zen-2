@@ -45,9 +45,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LALT>,
-                <&macro_tap &kp N2 &kp N4 &kp N8>,
-                <&macro_release &kp LALT>;
+                = <&macro_press &kp RALT>,
+                <&macro_tap GRAVE>,
+                <&macro_release &kp RALT>;
         };
     };
 };
