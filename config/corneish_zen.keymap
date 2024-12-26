@@ -18,7 +18,7 @@
       compatible = "zmk,behavior-sticky-key";
       label = "STICKY_KEY_QUICK_RELEASE";
       #binding-cells = <1>;
-      bindings = 0;
+      bindings = <&kp>;
       release-after-ms = <1000>;
       quick-release;
     };
@@ -42,7 +42,6 @@
 
     upag: upag_macro {
     compatible = "zmk,behavior-macro";
-    label = "UPAG_MACRO";
     // Up com Alt Gr
     #binding-cells = <1>;
 
@@ -51,7 +50,7 @@
 
     bindings = <
         &macro_press   &kp LSHFT &kp LCTRL
-        &macro_tap     <&kp>
+        &macro_tap     0
         &macro_release &kp LSHFT &kp LCTRL
                     };
             };
